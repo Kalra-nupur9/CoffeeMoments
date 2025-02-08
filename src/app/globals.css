@@ -2,20 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.bg_image {
+  background-image: url(/images/Home/Additional_details.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover; /* Ensures the image covers the whole area */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repetition */
+
 }
 
+.logo_font {
+  font-family: 'Akronim', sans-serif;
+  color: #421A00;
+}
+
+/* styles/globals.css */
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Abhaya Libre', serif;
 }
